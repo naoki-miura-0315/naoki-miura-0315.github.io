@@ -24,7 +24,7 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        h1 h2 {
+        h1, h2 {
             color: #007acc;
         }
 
@@ -40,13 +40,12 @@
         }
 
         .name-section img {
-            width: 0.5px;
-            height: 0.5px;
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
             object-fit: cover;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-
 
         .section {
             margin-bottom: 30px;
@@ -77,9 +76,29 @@
         .navbar a:hover {
             text-decoration: underline;
         }
+
+        ul {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .name-section {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .name-section img {
+                margin-bottom: 20px;
+            }
+        }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Welcome to My Research Homepage</h1>
+    </header>
+
     <!-- Navigation Bar -->
     <nav class="navbar">
         <a href="#about">About</a>
@@ -93,10 +112,11 @@
     <!-- Main Content -->
     <div class="container">
         <!-- Name Section -->
-        <img src="profile.JPG" alt="">
         <div class="name-section" id="about">
-            <h1>Naoki Miura</h1>
-            
+            <img src="profile.JPG" alt="Profile Picture">
+            <div>
+                <h1>Naoki Miura</h1>
+            </div>
         </div>
 
         <!-- Affiliation, Interests, and Contact -->
@@ -104,96 +124,69 @@
             <h2>Affiliation</h2>
             <ul>
                 <li>A Master's Student (M1) at Tohoku University</li>
-                <li>Member of <a href="https://www.nlp.ecei.tohoku.ac.jp/about-us/members/"> Tohoku NLP Group</a> </li>
-                <li>Part-time Researcher at 
-                    <a href="https://www.riken.jp/en/research/labs/aip/goalorient_tech/nat_lang_understand/index.html"> RIKEN AIP Natural Language Understanding Team</a> </li>
+                <li>Member of <a href="https://www.nlp.ecei.tohoku.ac.jp/about-us/members/">Tohoku NLP Group</a></li>
+                <li>Part-time Researcher at <a href="https://www.riken.jp/en/research/labs/aip/goalorient_tech/nat_lang_understand/index.html">RIKEN AIP Natural Language Understanding Team</a></li>
             </ul>
             <h2>Interests</h2>
             <ul>
-                <li> Natural Language Processing (NLP)
-                <li> Automatic Scoring
-                <li> Question Generation
-                <li> Education Support
+                <li>Natural Language Processing (NLP)</li>
+                <li>Automatic Scoring</li>
+                <li>Question Generation</li>
+                <li>Education Support</li>
             </ul>
             <h2>Contact</h2>
             <ul>
-                <li><p><a href="mailto:miura.naoki.p6@dc.tohoku.ac.jp">miura.naoki.p6@dc.tohoku.ac.jp</a>.</p>
+                <li><a href="mailto:miura.naoki.p6@dc.tohoku.ac.jp">miura.naoki.p6@dc.tohoku.ac.jp</a></li>
             </ul>
         </div>
 
         <!-- Publications -->
         <div class="section" id="publications">
             <h2>Publications</h2>
-              <h3>International Conference and Journals （Refereed）</h3>
-              <ul class="c-tabs__list_pub">
-              <li>
-                  <h4>Japanese-English Sentence Translation Exercises Dataset for Automatic Grading</h4>
-                  <p> <u>Naoki Miura</u>, Hiroaki Funayama, Seiya Kikuchi, Yuichiroh Matsubayashi, Yuya Iwase, Kentaro Inui. Proceedings of the 18th Conference of the European Chapter of the Association for Computational Linguistics: Student Research Workshop (EACL2024-SRW).,pp266-278 , March. 2024, Malta.</p >
-              </li>
-        <h3>Domestic Conferences and Symposium</h3>
-             <li>
-                 <h4>大規模言語モデルによる和文英訳問題の自動採点</h4>
-                 <p> <u>三浦直己</u>, 舟山弘晃, 松林優一郎, 岩瀬裕哉, 乾健太郎. 言語処理学会第30回年次大会 (NLP2024), 2024 年 3 ⽉, 神戸, ポスター発表.</p>
-             </li>
-             <li>
-                 <h4>大規模言語モデルによる和文英訳問題の自動採点の評価と応用可能性の検討</h4>
-                 <p> <u>三浦直己</u>，岩瀬裕哉，舟山弘晃，松林優一郎. NLP若手の会第18回シンポジウム（YANS 2023）, 2023 年 8 ⽉, 東京, ポスター発表. <br> <b>奨励賞受賞</b></p>
-             </li>
-             
+            <h3>International Conference and Journals (Refereed)</h3>
+            <ul>
+                <li>
+                    <h4>Japanese-English Sentence Translation Exercises Dataset for Automatic Grading</h4>
+                    <p><u>Naoki Miura</u>, Hiroaki Funayama, Seiya Kikuchi, Yuichiroh Matsubayashi, Yuya Iwase, Kentaro Inui. Proceedings of the 18th Conference of the European Chapter of the Association for Computational Linguistics: Student Research Workshop (EACL2024-SRW)., pp. 266-278, March 2024, Malta.</p>
+                </li>
+            </ul>
+            <h3>Domestic Conferences and Symposium</h3>
+            <ul>
+                <li>
+                    <h4>\u5927\u898F\u6A21\u8A00\u8A9E\u30E2\u30C7\u30EB\u306B\u3088\u308B\u548C\u6587\u82F1\u8A33\u554F\u984C\u306E\u81EA\u52D5\u63A1\u70B9</h4>
+                    <p><u>\u4E09\u6D66\u76F4\u5DF1</u>, \u8235\u5C71\u5F18\u6669, \u677E\u6797\u512A\u4E00\u90CE, \u5D07\u702C\u88D5\u4E5F. \u8A00\u8A9E\u51E6\u7406\u5B66\u4F1A\u7B2C30\u56DE\u5E74\u6B21\u5927\u4F1A (NLP2024), 2024\u5E74\uFF13\u6708, \u795E\u6238, \u30DD\u30B9\u30BF\u30FC\u767A\u8868.</p>
+                </li>
+            </ul>
         </div>
 
         <!-- Activities -->
         <div class="section" id="activities">
             <h2>Activities</h2>
-            <p>comming soon</p>
+            <p>Coming soon...</p>
         </div>
 
         <!-- Experience -->
         <div class="section" id="experience">
             <h2>Experience</h2>
-            <li class="c-timeline__item">
-              <header class="c-timeline__header">
-                  <span class="c-timeline__time">2024.4 - Current</span>
-                <span class="c-timeline__dot"></span>
-                <h4 class="c-timeline__heading">RIKEN AIP Natural Language Understanding Team</h4>
-                  <p class="c-timeline__body"><i> Part-time Researcher</i> </p>
-              </header>
-            </li>
+            <ul>
+                <li>
+                    <h4>RIKEN AIP Natural Language Understanding Team</h4>
+                    <p><i>Part-time Researcher (2024.4 - Current)</i></p>
+                </li>
+            </ul>
         </div>
 
         <!-- Education -->
         <div class="section" id="education">
             <h2>Education</h2>
-
-            <!-- First Entry -->
             <div class="education-item">
                 <p class="period">2022.4 - 2024.3</p>
                 <h3>Tohoku University</h3>
                 <p>B.S. in Pedagogy</p>
-                <p>Advisor: Associate prof. Yuichiroh Matsubayashi</p>
+                <p>Advisor: Associate Prof. Yuichiroh Matsubayashi</p>
             </div>
-
-            <!-- Second Entry -->
             <div class="education-item">
                 <p class="period">2024.4 - Current</p>
                 <h3>Tohoku University</h3>
                 <p>M.S. in Educational Informatics</p>
-                <p>Advisor: Associate prof. Yuichiroh Matsubayashi</p>
-            </div>
-    
-        </div>
-
-        <!-- Award -->
-        <div class="section" id="award">
-            <h2>Award</h2>
-            <!-- First Award -->
-            <div class="award-item">
-                <span class="award-name">
-                    <a href="https://yans.anlp.jp/entry/award">YANS 2023 若手奨励賞</span>
-                <span class="award-date">2023.8</span>
-            </div>
-
-        </div>
-    </div>
-</body>
-</html>
+                <p>Advisor: Associate
