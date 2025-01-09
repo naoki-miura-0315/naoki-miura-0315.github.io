@@ -1,40 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naoki Miura</title>
+    <title>My Research Homepage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
+        /* General Styles */
         body {
             background-color: #f9f9f9;
             color: #333333;
             font-family: 'Roboto', sans-serif;
-            margin: 20px;
-            padding: 20px;
-            max-width: 800px;
-            line-height: 1.6;
+            margin: 0;
+            padding: 0;
         }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
         h1, h2 {
             color: #007acc;
         }
-        a {
-            color: #007acc;
-            text-decoration: none;
+
+        p {
+            line-height: 1.8;
         }
-        a:hover {
+
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            margin-top: 0;
+        }
+
+        .navbar {
+            background-color: #007acc;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
             text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to My Research Homepage</h1>
-    <p>Hello! My name is [Your Name], and I am a researcher specializing in [Your Field].</p>
-    <h2>About Me</h2>
-    <p>[Write a brief introduction about yourself, your research interests, and your goals.]</p>
-    <h2>Research</h2>
-    <p>[Describe your research projects, list publications, or link to your papers.]</p>
-    <h2>Contact</h2>
-    <p>You can reach me at <a href="mailto:your.email@example.com">your.email@example.com</a>.</p>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="#about">About</a>
+        <a href="#publications">Publications</a>
+        <a href="#domestic-conferences">Domestic Conferences</a>
+        <a href="#activities">Activities</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#award">Award</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Name Section -->
+        <div class="section" id="about">
+            <h1>[Your Name]</h1>
+            <p>Hello! My name is <strong>[Your Name]</strong>, and I am a researcher specializing in [Your Field].</p>
+        </div>
+
+        <!-- Affiliation, Interests, and Contact -->
+        <div class="section">
+            <h2>Affiliation</h2>
+            <p>[Your Affiliation]</p>
+            <h2>Interests</h2>
+            <p>[Your Interests]</p>
+            <h2>Contact</h2>
+            <p>You can reach me at <a href="mailto:your.email@example.com">your.email@example.com</a>.</p>
+        </div>
+
+        <!-- Publications -->
+        <div class="section" id="publications">
+            <h2>Publications</h2>
+            <p>[List of your publications with links if available]</p>
+        </div>
+
+        <!-- Domestic Conferences and Symposium -->
+        <div class="section" id="domestic-conferences">
+            <h2>Domestic Conferences and Symposium</h2>
+            <p>[Details about your presentations and participations]</p>
+        </div>
+
+        <!-- Activities -->
+        <div class="section" id="activities">
+            <h2>Activities</h2>
+            <p>[Describe your academic and non-academic activities]</p>
+        </div>
+
+        <!-- Experience -->
+        <div class="section" id="experience">
+            <h2>Experience</h2>
+            <p>[Describe your work and research experience]</p>
+        </div>
+
+        <!-- Education -->
+        <div class="section" id="education">
+            <h2>Education</h2>
+            <p>[List your educational background]</p>
+        </div>
+
+        <!-- Award -->
+        <div class="section" id="award">
+            <h2>Award</h2>
+            <p>[List awards or recognitions you have received]</p>
+        </div>
+    </div>
 </body>
 </html>
